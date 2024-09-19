@@ -93,7 +93,7 @@ useEffect(() => {
 /* APP05 --- Home.js */
 
 /* APP 06 Router : 동적 URL을 생성할 수 있다. ex)/movie/123 */
-  return <Router>
+  return <Router basename="/movieapp">
     <Routes>
       <Route path="/hello" element={<h1>hello</h1>}></Route>
       <Route path="/movie/:id" element={<Detail />}></Route>
